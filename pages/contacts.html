@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuberit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media.css">
+</head>
+<body>
+    <div class="site"> 
+
+        <header class="header">
+                <div class="header__top container">
+                    <a class="logo" href="../index.html"></a>
+                    <div class="menu__icon">
+                        <span></span>
+                    </div>
+                    <nav class="nav">
+                        <ul>
+                            <li><a href="../index.html">Главная</a></li>
+                            <li><a href="./about.html">О продукте</a></li>
+                            <li  class="active"><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+        </header>
+
+        <section class="contacts kuberit">
+            <div class="kuberit__title">
+                <h1>Контакты</h1>
+                <p>125167, Москва, Театральная аллея, д.1, стр.3 Бизнес-центр «Петровский парк»</p>
+                <p><a href="tel:+74952520255" class="contacts__phone">+7 (495) 252-02-55</a></p>
+                <p>Официальный электронный адрес компании: <a href="maito:market@galantis.com" class="contacts__email">market@galantis.com</a></p>
+            </div>
+            <div class="kuberit__bg"></div>
+        </section> 
+
+        <section class="contacts__section">
+
+        </section>
+        
+        <footer>
+            <div class="feedback">
+                <form action="#" id="form" class="form__body">
+                    <h2>Получите дополнительную информацию</h2>
+                    <p class="title">Остались вопросы?</p>
+                    <div class="form">
+                        <input type="text" name="name" placeholder="Имя" class="name _req">
+                        <input type="phone" name="phone" placeholder="+375(__)___-__-__" class="phone _req">
+                        <input type="text" name="company" placeholder="Компания" class="company _req">
+                        <input type="email" name="email" placeholder="Email" class="email _req">
+                    </div>
+                    <button class="btn" type="submit">Отправить</button>
+                    <p class="info">Отправляя запрос, Вы соглашаетесь на обработку персональных данных</p>
+                    <div class="error__message hidden">Одно или несколько полей содержат ошибочные данные. Пожалуйста, проверьте их и попробуйте ещё раз.</div>
+                </form>
+            </div>
+            <div class="footer__top">
+                <div class="container">
+                    <div class="footer__top-content">
+                        <a class="logo__footer-top" href="../index.html"></a>
+                        <div class="footer__nav">
+                            <ul>
+                                <li><a href="../index.html">Главная</a></li>
+                                <li><a href="./about.html">О продукте</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="container">
+                    <div class="footer__bot-content">
+                        <a class="logo__footer-bot" href="../index.html"></a>
+                        <div class="copy"><span>Политика конфиденциальности</span> <span> Copyright 1999 - 2022 — Все права защищены.</span></div>  
+                    </div>
+                </div>
+            </div>
+            
+        </footer>
+
+    </div>
+    <script defer src="../script/index.js"></script>
+</body>
+</html>

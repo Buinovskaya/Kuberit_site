@@ -1,0 +1,316 @@
+@media (max-width: 1024px){
+    body{
+        font-size: 12px;
+    }
+    .kuberit{
+        height: 600px;
+    }
+    .kuberit h1{
+        padding-bottom: 40px;
+    }
+    .company__description,
+    .item__list {
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+        padding: 30px;
+    }
+    .item__list{
+        justify-items: normal;
+        align-items: normal;
+    }
+    .ico__company {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .about__company{
+        padding-bottom: 50px;
+    }
+    .team{
+        padding: 0;
+    }
+    .team__description{
+        padding-top: 0;
+    }
+    .ico__item1,
+    .ico__item2,
+    .ico__item3,
+    .ico__item4{
+        height: 300px;
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 769px) {
+    .kuberit p{
+        width: 100%;
+    }
+    .item__list{
+        padding-top: 0;
+        padding-left: 0;
+    }
+    .content__item h2 {
+        padding: 20px 30px;
+    }
+    .content__item {
+        margin-bottom: 0;
+    }
+    
+    .factors{
+        padding-bottom: 50px;
+    }
+    .competence {
+        padding-bottom: 430px;
+    }
+    .feedback{
+        margin: 0 30px;
+        padding: 40px;
+    }
+    .feedback h2,
+    .title {
+        margin-bottom: 30px;
+    }
+    .form{
+        grid-row-gap: 30px;
+        margin-bottom: 50px;
+    }
+    .logo__footer-top{
+        width: 150px;
+        height: 70px;
+    }
+    .copy span {
+        padding-right: 0;
+        padding-left: 15px;
+    }
+
+    .contacts__section {
+        height: 340px;
+    }
+	.menu__icon {
+		z-index: 11;
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 18px;
+		cursor: pointer;
+        left: -60px;
+        top: 2px;
+	}
+	.menu__icon span,
+	.menu__icon::before,
+	.menu__icon::after {
+		left: 0;
+		position: absolute;
+		height: 10%;
+		width: 100%;
+		transition: all 0.8s ease 0s;
+		background-color: #000;
+        
+	}
+	.menu__icon::before,
+	.menu__icon::after {
+		content: "";
+	}
+	.menu__icon::before {
+		top: 0;
+	}
+	.menu__icon::after {
+		bottom: 0;
+	}
+	.menu__icon span {
+		top: 50%;
+		transform: scale(1) translate(0px, -50%);
+	}
+
+	.menu__icon._active span {
+		transform: scale(0) translate(0px, -50%);
+	}
+	.menu__icon._active::before {
+		top: 50%;
+		transform: rotate(-405deg) translate(0px, -50%);
+        background-color: #fff;
+	}
+	.menu__icon._active::after {
+		bottom: 50%;
+		transform: rotate(405deg) translate(0px, 50%);
+        background-color: #fff;
+	} 
+
+    .nav{
+        position: fixed;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 100px 30px 30px 30px;
+        transition: left 0.3s ease 0s;
+        font-size: 1.4em;
+    }
+    .nav._active{
+        left: 75%;
+    }
+    .header__top .nav ul {
+        display: block;
+        width: max-content;
+        margin-left: 0;
+        margin-right: auto;
+    }
+    .header__top .nav ul li{
+        margin-bottom: 20px;
+    }
+    .header__top .nav ul li:last-child{
+        margin-bottom: 0;
+    }
+    .header__top .nav > ul > li:hover > a:after,
+    .header__top .nav > ul > li.active > a:after{
+        background-color: #fff;
+    }
+    .header__top .nav ul li a,
+    .header__top .nav ul li a:visited {
+      color: #fff;
+    }
+}
+
+@media (max-width: 426px){
+    body{
+        font-size: 10px;
+    }
+    .container{
+        width: 90%;
+    }
+    .kuberit p {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .kuberit__title{
+        margin-left: 0;
+    }
+    .about__company p {
+        padding-bottom: 20px;
+    }
+
+    .factors__item::before{
+        top: 0px;
+        left: 10px;
+        width: 30px;
+        height: 40px;
+    }
+    .competence__item::before {
+        left: 10px;
+        width: 30px;
+        height: 40px;
+    }
+    .feedback{
+        margin: 0 15px;
+        padding: 20px;
+    }
+    .form {
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: none;
+    }
+    .btn{
+        height: 55px;
+        width: 250px;
+        margin-bottom: 20px;
+    }
+
+    .nav._active {
+        left: 67%;
+    }
+    
+
+    .form {
+        margin-bottom: 20px;
+        grid-row-gap: 10px;
+    }
+}
+
+@media (max-width: 376px){
+    
+  
+    .nav._active {
+        left: 62%;
+    }
+}
+@media (max-width: 321px){
+    .nav._active {
+        left: 58%;
+    }
+    .ico__item1, .ico__item2, .ico__item3, .ico__item4 {
+        height: 200px;
+        width: 260px;
+    }
+}
+
+@media (max-width: 635px){
+    .kuberit{
+        display: flex;
+        height: 500px;
+    }
+    .kuberit__bg{
+        display: none;
+    }
+    .nav._active {
+        left: 71%;
+    }
+}
+@media (max-width: 575px){
+    .ico__company{
+        display: none;
+    }
+    .company__description {
+        display: block;
+    }
+    .team{
+        display: block;
+        background-image: url(../img/map.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: contain;
+        background-position-y: 150px;
+    }
+       
+    .factors__list, .competence__list {
+        columns: 1;
+    }
+    .logo__footer-top {
+        width: 120px;
+        height: 50px;
+    }
+    .footer__bot-content {
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .logo__footer-bot {
+        width: 190px;
+    }
+    .nav._active {
+        left: 67%;
+    }
+    .content__item ul li {
+        margin-left: 30px;
+        width: 80%;
+    }
+    .content__item ul li:before {
+        width: 10px;
+        height: 10px;
+    }
+    .ico__item1, .ico__item2, .ico__item3, .ico__item4 {
+        height: 240px;
+        width: 300px;
+    }
+    .btn__connect {
+        padding: 24px 80px;
+    }
+    .item__list {
+        padding-bottom: 0;
+    }
+    .form{
+        margin-bottom: 20px;
+    }
+}
